@@ -20,9 +20,6 @@ namespace DeskTopper
     /// </summary>
     public partial class GetInputSize : Page
     {
-        public GetInputSize()
-        {
-          
-        }
+       
     }
 }

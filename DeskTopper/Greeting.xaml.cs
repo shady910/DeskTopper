@@ -25,13 +25,9 @@ namespace DeskTopper
             InitializeComponent();
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void startOrder_Click(object sender, RoutedEventArgs e)
         {
-         
-            // View Size Report
-            GetInputSize getInputSizePage = new GetInputSize();
-            this.NavigationService.Navigate(getInputSizePage);
-
+            this.NavigationService.Navigate("GetInputSize.xaml");
         }
     }
 }

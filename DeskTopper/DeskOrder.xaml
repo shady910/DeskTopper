@@ -25,6 +25,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
+        <Button x:Name="pressLast" Content="Confirm" HorizontalAlignment="Left" Margin="198,247,0,0" VerticalAlignment="Top" Width="85" Background="#FF58BFBB" FontSize="18" Height="27"/>
 
     </Grid>
 </Page>
