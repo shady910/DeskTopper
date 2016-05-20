@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:DeskTopper"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="525"
+      d:DesignHeight="375" d:DesignWidth="525"
       Title="chooseMaterial">
 
     <Grid>
@@ -25,16 +25,17 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <ListBox Name="materialListBox" Margin="10,53,395,57" FontSize="18" Background="#FF248999">
+        <ListBox Name="materialListBox" Margin="10,53,395,76" FontSize="18" Background="#FF248999">
             <ListBoxItem>oak</ListBoxItem>
             <ListBoxItem>laminate</ListBoxItem>
             <ListBoxItem>pine</ListBoxItem>
             <ListBoxItem>walnut</ListBoxItem>
             <ListBoxItem>marble</ListBoxItem>
             <ListBoxItem>metal</ListBoxItem>
-           
+
         </ListBox>
-        <Button x:Name="press3" Content="Next Page" HorizontalAlignment="Left" Margin="376,247,0,0" VerticalAlignment="Top" Width="133" Background="#FF58BFBB" FontSize="18" Height="43"/>
+        <Button x:Name="press3" Content="Next Page" Click="MCbtn_Click"
+     HorizontalAlignment="Left" Margin="366,256,0,0" VerticalAlignment="Top" Width="133" Background="#FF58BFBB" FontSize="18" Height="43"/>
 
 
     </Grid>

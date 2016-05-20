@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:DeskTopper"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
+      d:DesignHeight="375" d:DesignWidth="525"
       Title="DeskOrder">
     <Page.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -15,7 +15,13 @@
     </Page.Background>
 
     <Grid>
-        <Label x:Name="labelPrompt2" Content="Confirm your Order" HorizontalAlignment="Left" Margin="4,7,0,0" VerticalAlignment="Top" Background="#FF087264" Foreground="#FF29EAC7" Height="34" Width="295" RenderTransformOrigin="0.5,0.5" FontFamily="Verdana" FontSize="20">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="#FF25CCD3" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label x:Name="labelPrompt6" Content="Confirm your Order" HorizontalAlignment="Left" Margin="4,7,0,0" VerticalAlignment="Top" Background="#FF087264" Foreground="#FF29EAC7" Height="34" Width="519" RenderTransformOrigin="0.5,0.5" FontFamily="Verdana" FontSize="20">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -25,7 +31,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Button x:Name="pressLast" Content="Confirm" HorizontalAlignment="Left" Margin="198,247,0,0" VerticalAlignment="Top" Width="85" Background="#FF58BFBB" FontSize="18" Height="27"/>
+        <Button x:Name="pressLast" Content="Confirm" HorizontalAlignment="Left" Margin="406,248,0,0" VerticalAlignment="Top" Width="85" Background="#FF58BFBB" FontSize="18" Height="27"/>
 
     </Grid>
 </Page>

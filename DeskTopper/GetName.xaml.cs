@@ -16,13 +16,18 @@ using System.Windows.Shapes;
 namespace DeskTopper
 {
     /// <summary>
-    /// Interaction logic for DeskOrder.xaml
+    /// Interaction logic for GetName.xaml
     /// </summary>
-    public partial class DeskOrder : Page
+    public partial class GetName : Page
     {
-        public DeskOrder()
+        public GetName()
         {
             InitializeComponent();
+        }
+        private void GNbtn_Click(object sender, RoutedEventArgs e)
+        {
+            Uri uri = new Uri("DeskOrder.xaml", UriKind.Relative);
+            this.NavigationService.Navigate(uri);
         }
     }
 }

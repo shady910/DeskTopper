@@ -25,9 +25,10 @@ namespace DeskTopper
             InitializeComponent();
         }
 
-        private void startOrder_Click(object sender, RoutedEventArgs e)
+        private void SObtn_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate("GetInputSize.xaml");
+            Uri uri = new Uri("GetInputSize.xaml", UriKind.Relative);
+            this.NavigationService.Navigate(uri);
         }
     }
 }

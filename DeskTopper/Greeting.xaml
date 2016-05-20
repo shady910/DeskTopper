@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:DeskTopper"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="525"
+      d:DesignHeight="375" d:DesignWidth="525"
       Title="DeskTopper - Greeting">
 
     <Grid>
@@ -15,8 +15,9 @@
                 <GradientStop Color="#FF2D6CAC" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Label x:Name="Greeting" Content="Welcome to the Escritorio App" HorizontalAlignment="Left" Margin="78,82,-9,0" VerticalAlignment="Top" Foreground="#FF26C7B1" FontSize="24" FontFamily="Verdana" Width="456"/>
-        <Button x:Name="startOrder" Content="Start Order" HorizontalAlignment="Left" Margin="190,166,0,0" VerticalAlignment="Top" Width="148" Height="33" FontFamily="Verdana" FontSize="14" Background="#FF58BFBB" Click="button_Click"/>
+        <Label x:Name="Hello" Content="Welcome to the Escritorio App" HorizontalAlignment="Left" Margin="78,82,-9,0" VerticalAlignment="Top" Foreground="#FF26C7B1" FontSize="24" FontFamily="Verdana" Width="456"/>
+        <Button x:Name="startOrder" Content="Start Order"  
+         HorizontalAlignment="Left" Margin="190,166,0,0" VerticalAlignment="Top" Width="148" Height="33" FontFamily="Verdana" FontSize="14" Background="#FF58BFBB" Click="SObtn_Click"/>
         
     </Grid>
 </Page>

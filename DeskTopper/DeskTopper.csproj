@@ -58,6 +58,9 @@
     <Compile Include="DeskOrder.xaml.cs">
       <DependentUpon>DeskOrder.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GetInputSize.xaml.cs">
+      <DependentUpon>GetInputSize.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GetName.xaml.cs">
       <DependentUpon>GetName.xaml</DependentUpon>
     </Compile>
@@ -72,15 +75,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="GetName.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="DrawerCount.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="GetInputSizePage.xaml">
+    <Page Include="GetInputSize.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GetName.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -105,9 +108,6 @@
     </Compile>
     <Compile Include="DrawerCount.xaml.cs">
       <DependentUpon>DrawerCount.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="GetInputSizePage.xaml.cs">
-      <DependentUpon>GetInputSizePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Greeting.xaml.cs">
       <DependentUpon>Greeting.xaml</DependentUpon>

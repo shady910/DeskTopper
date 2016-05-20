@@ -24,5 +24,11 @@ namespace DeskTopper
         {
             InitializeComponent();
         }
+
+        private void IRbtn_Click(object sender, RoutedEventArgs e)
+        {
+            Uri uri = new Uri("GetName.xaml", UriKind.Relative);
+            this.NavigationService.Navigate(uri);
+        }
     }
 }

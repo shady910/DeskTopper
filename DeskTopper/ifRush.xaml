@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:DeskTopper"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="525"
+      d:DesignHeight="375" d:DesignWidth="525"
       Title="ifRush">
 
     <Grid>
@@ -33,6 +33,7 @@
            
 
         </ListBox>
-        <Button x:Name="press4" Content="Next Page" HorizontalAlignment="Left" Margin="368,241,0,0" VerticalAlignment="Top" Width="133" Background="#FF58BFBB" FontSize="18" Height="43"/>
+        <Button x:Name="press4" Content="Next Page" Click="IRbtn_Click"  
+     HorizontalAlignment="Left" Margin="363,272,0,0" VerticalAlignment="Top" Width="133" Background="#FF58BFBB" FontSize="18" Height="43"/>
     </Grid>
 </Page>

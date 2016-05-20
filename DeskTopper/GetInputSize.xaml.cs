@@ -20,6 +20,15 @@ namespace DeskTopper
     /// </summary>
     public partial class GetInputSize : Page
     {
-       
+        public GetInputSize()
+        {
+            InitializeComponent();
+        }
+
+        private void GISPbtn_Click(object sender, RoutedEventArgs e)
+        {
+            Uri uri = new Uri("DrawerCount.xaml", UriKind.Relative);
+            this.NavigationService.Navigate(uri);
+        }
     }
 }

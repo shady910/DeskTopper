@@ -35,7 +35,8 @@
             <ListBoxItem>6</ListBoxItem>
             <ListBoxItem>7</ListBoxItem>
         </ListBox>
-        <Button x:Name="press2" Content="Next Page" HorizontalAlignment="Left" Margin="364,307,0,0" VerticalAlignment="Top" Width="133" Background="#FF58BFBB" FontSize="18" Height="43"/>
+        <Button x:Name="press2" Content="Next Page" Click="DCbtn_Click" 
+     HorizontalAlignment="Left" Margin="354,249,0,0" VerticalAlignment="Top" Width="133" Background="#FF58BFBB" FontSize="18" Height="43"/>
 
 
 
