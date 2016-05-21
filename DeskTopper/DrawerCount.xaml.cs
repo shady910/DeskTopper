@@ -30,5 +30,10 @@ namespace DeskTopper
             Uri uri = new Uri("chooseMaterial.xaml", UriKind.Relative);
             this.NavigationService.Navigate(uri);
         }
+
+        private void ListBoxItem_Selected(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }

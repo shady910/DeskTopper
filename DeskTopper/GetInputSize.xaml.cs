@@ -30,5 +30,16 @@ namespace DeskTopper
             Uri uri = new Uri("DrawerCount.xaml", UriKind.Relative);
             this.NavigationService.Navigate(uri);
         }
+
+        private void widthBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string widthInput = widthBox.Text;
+            int deskWidth = int.Parse(widthInput.Trim());
+        }
+        private void lengthBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string lengthInput = lengthBox.Text;
+            int deskLength = int.Parse(lengthInput.Trim());
+        }
     }
 }

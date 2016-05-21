@@ -12,4 +12,5 @@
             <GradientStop Color="#FF287ABF" Offset="1"/>
         </LinearGradientBrush>
     </NavigationWindow.Background>
+    
 </NavigationWindow>

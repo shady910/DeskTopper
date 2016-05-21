@@ -20,7 +20,7 @@
         <Label x:Name="getLength_Copy" Content="length:" HorizontalAlignment="Left" Margin="53,115,0,0" VerticalAlignment="Top" Width="68" FontSize="18" Foreground="#FF46B8A8"/>
         <Button x:Name="press1" Content="Next Page" Click="GISPbtn_Click"
    HorizontalAlignment="Left" Margin="272,188,0,0" VerticalAlignment="Top" Width="133" Background="#FF58BFBB" FontSize="18" Height="43"/>
-        <TextBox x:Name="widthBox" HorizontalAlignment="Left" Height="23" Margin="126,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="279" Foreground="#FF248999" Background="#FF1B1B1B"/>
+        <TextBox x:Name="widthBox" HorizontalAlignment="Left" Height="23" Margin="126,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="279" Foreground="#FF248999" Background="#FF1B1B1B" TextChanged="widthBox_TextChanged"/>
         <TextBox x:Name="lengthBox" HorizontalAlignment="Left" Height="23" Margin="126,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="279" Foreground="#FF248999" Background="#FF1B1B1B"/>
     </Grid>
 </Page>
