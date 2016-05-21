@@ -25,7 +25,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="49" Margin="27,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="460" Background="#FF231919" Foreground="#FF31B631" FontSize="22" FontFamily="Verdana"/>
+        <TextBox x:Name="buyerNameBox" HorizontalAlignment="Left" Height="49" Margin="27,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="460" Background="#FF231919" Foreground="#FF31B631" FontSize="22" FontFamily="Verdana"/>
         <Button x:Name="press5" Content="Next Page" Click="GNbtn_Click"
         	HorizontalAlignment="Left" Margin="354,254,0,0" VerticalAlignment="Top" Width="133" Background="#FF58BFBB" FontSize="18" Height="43"/>
 

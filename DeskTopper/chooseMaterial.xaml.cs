@@ -20,15 +20,30 @@ namespace DeskTopper
     /// </summary>
     public partial class chooseMaterial : Page
     {
+        private List<string> _surfaceMaterial;
         public chooseMaterial()
         {
             InitializeComponent();
         }
+        
+        //get material list and display
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            string[] thing = Enum.GetNames(typeof (SurfaceMaterial));
+            _surfaceMaterial = thing.ToList();
+            materialListBox.ItemsSource = _surfaceMaterial;
+        }
 
         private void MCbtn_Click(object sender, RoutedEventArgs e)
         {
+            SurfaceMaterial material = (SurfaceMaterial)Enum.Parse(typeof(SurfaceMaterial), materialListBox.SelectedItem.ToString());
+            //set surface material here
+            Desk d = (Desk)Application.Current.Properties["Desk"];
+            d.deskTopType = material;
+
             Uri uri = new Uri("ifRush.xaml", UriKind.Relative);
             this.NavigationService.Navigate(uri);
         }
+        
     }
 }

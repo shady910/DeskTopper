@@ -19,7 +19,7 @@ namespace DeskTopper
     /// Interaction logic for Greeting.xaml
     /// </summary>
     public partial class Greeting : Page
-    {
+    {   
         public Greeting()
         {
             InitializeComponent();
@@ -27,6 +27,9 @@ namespace DeskTopper
 
         private void SObtn_Click(object sender, RoutedEventArgs e)
         {
+            Desk desk = new Desk();
+            Application.Current.Properties["Desk"] = desk;
+
             Uri uri = new Uri("GetInputSize.xaml", UriKind.Relative);
             this.NavigationService.Navigate(uri);
         }

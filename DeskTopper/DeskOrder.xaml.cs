@@ -24,5 +24,16 @@ namespace DeskTopper
         {
             InitializeComponent();
         }
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            Desk d = (Desk)Application.Current.Properties["Desk"];
+            OrderNameBox.Content = "Order for: " + d.buyerName;
+            deskWidthBox.Content = "Desk width: " + d.deskWidth.ToString() + " inches";
+            deskLengthBox.Content = "Desk Length: " + d.deskLength.ToString() + " inches";
+            drawerBox.Content = "Number of Drawers: " + d.noOfDrawers.ToString();
+            materialTypeBox.Content = "Material Type: " + d.deskTopType.ToString();
+            rushOrderBox.Content = "Rush Order: " + d.rushOrder.ToString();
+            priceEstimateBox.Content = "Estimated Cost: $" + d.priceEstimate.ToString();
+        }
     }
 }

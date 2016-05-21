@@ -26,6 +26,9 @@ namespace DeskTopper
         }
         private void GNbtn_Click(object sender, RoutedEventArgs e)
         {
+            Desk d = (Desk)Application.Current.Properties["Desk"];
+            d.buyerName = buyerNameBox.Text.Trim();
+
             Uri uri = new Uri("DeskOrder.xaml", UriKind.Relative);
             this.NavigationService.Navigate(uri);
         }

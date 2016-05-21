@@ -9,6 +9,7 @@
       Title="DeskTopper - Greeting">
 
     <Grid>
+        
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="Black" Offset="0"/>

@@ -20,26 +20,30 @@ namespace DeskTopper
     /// </summary>
     public partial class GetInputSize : Page
     {
+        
+
         public GetInputSize()
         {
             InitializeComponent();
         }
-
+        //on click, take input for width/length and check validity before moving on to next page
         private void GISPbtn_Click(object sender, RoutedEventArgs e)
         {
-            Uri uri = new Uri("DrawerCount.xaml", UriKind.Relative);
-            this.NavigationService.Navigate(uri);
-        }
+            Desk d = (Desk)Application.Current.Properties["Desk"];
+            bool deskWidth = Desk.setDeskWidth(widthBox.Text, d);
+            bool deskLength = Desk.setDeskLength(lengthBox.Text, d);
 
-        private void widthBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            string widthInput = widthBox.Text;
-            int deskWidth = int.Parse(widthInput.Trim());
+            if ((deskWidth != true)||(deskLength !=true))
+            {
+                MessageBox.Show("Sorry, we don't make desks to those dimensions. "
+                    + "Please enter a number between 1 and 500.");
+            }else
+            {
+                Uri uri = new Uri("DrawerCount.xaml", UriKind.Relative);
+                this.NavigationService.Navigate(uri);
+            }
         }
-        private void lengthBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            string lengthInput = lengthBox.Text;
-            int deskLength = int.Parse(lengthInput.Trim());
-        }
+                
+        
     }
 }
