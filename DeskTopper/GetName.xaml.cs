@@ -27,10 +27,16 @@ namespace DeskTopper
         private void GNbtn_Click(object sender, RoutedEventArgs e)
         {
             Desk d = (Desk)Application.Current.Properties["Desk"];
-            d.buyerName = buyerNameBox.Text.Trim();
+            DeskOrderMethods dom = new DeskOrderMethods();
 
-            Uri uri = new Uri("DeskOrder.xaml", UriKind.Relative);
-            this.NavigationService.Navigate(uri);
+            String buyerName = buyerNameBox.Text.Trim();
+            bool check = dom.checkValidString(buyerName);
+            if (check != true)
+            {
+                d.buyerName = buyerName;
+                Uri uri = new Uri("DeskOrder.xaml", UriKind.Relative);
+                this.NavigationService.Navigate(uri);
+            }
         }
     }
 }

@@ -29,9 +29,10 @@ namespace DeskTopper
         //on click, take input for width/length and check validity before moving on to next page
         private void GISPbtn_Click(object sender, RoutedEventArgs e)
         {
-            Desk d = (Desk)Application.Current.Properties["Desk"];
-            bool deskWidth = Desk.setDeskWidth(widthBox.Text, d);
-            bool deskLength = Desk.setDeskLength(lengthBox.Text, d);
+            Desk desk = (Desk)Application.Current.Properties["Desk"];
+            DeskOrderMethods dom = new DeskOrderMethods();
+            bool deskWidth = dom.checkValid(dom.validateIntInput(widthBox.Text));
+            bool deskLength = dom.checkValid(dom.validateIntInput(lengthBox.Text));
 
             if ((deskWidth != true)||(deskLength !=true))
             {
