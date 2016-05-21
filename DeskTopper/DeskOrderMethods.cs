@@ -71,8 +71,10 @@ namespace DeskTopper
             if (test == true)
                 MessageBox.Show("Error: Please enter a name, not a number.");
             else if (input == "")
+            {
                 test = true;
-                MessageBox.Show("Error: Please enter a name in the box."); 
+                MessageBox.Show("Error: Please enter a name in the box.");
+            }
             return test;
         }
 

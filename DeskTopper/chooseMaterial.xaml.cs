@@ -35,14 +35,19 @@ namespace DeskTopper
         }
 
         private void MCbtn_Click(object sender, RoutedEventArgs e)
-        {
-            SurfaceMaterial material = (SurfaceMaterial)Enum.Parse(typeof(SurfaceMaterial), materialListBox.SelectedItem.ToString());
-            //set surface material here
-            Desk d = (Desk)Application.Current.Properties["Desk"];
-            d.deskTopType = material;
+        {   if (materialListBox.SelectedIndex == -1)
+                MessageBox.Show("Please make a selection from the list.");
+            else
+            {
+                SurfaceMaterial material = (SurfaceMaterial)Enum.Parse(typeof(SurfaceMaterial), materialListBox.SelectedItem.ToString());
+                //set surface material here
+                Desk d = (Desk)Application.Current.Properties["Desk"];
+                d.deskTopType = material;
 
-            Uri uri = new Uri("ifRush.xaml", UriKind.Relative);
-            this.NavigationService.Navigate(uri);
+                Uri uri = new Uri("ifRush.xaml", UriKind.Relative);
+                this.NavigationService.Navigate(uri);
+            }
+            
         }
         
     }
