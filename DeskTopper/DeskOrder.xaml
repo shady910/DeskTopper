@@ -55,7 +55,7 @@
             </ListBox>
             
         </Grid>
-        <Button x:Name="pressLast" Content="Confirm" HorizontalAlignment="Left" Margin="406,248,0,0" VerticalAlignment="Top" Width="85" Background="#FF58BFBB" FontSize="18" Height="27"/>
+        <Button x:Name="pressLast" Content="Confirm" HorizontalAlignment="Left" Margin="406,248,0,0" VerticalAlignment="Top" Width="85" Background="#FF58BFBB" FontSize="18" Height="27" Click="pressLast_Click"/>
 
     </Grid>
 </Page>

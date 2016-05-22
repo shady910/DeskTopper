@@ -18,15 +18,17 @@ namespace DeskTopper
         Walnut,
         Metal
     }
+
     class Desk
     {
-            public string buyerName { get; set; }
-            public int deskWidth { get; set; }
-            public int deskLength { get; set; }
-            public int noOfDrawers { get; set; }
-            public int rushOrder { get; set; }
-            public SurfaceMaterial deskTopType { get; set; }
-            public int priceEstimate { get; set; }
+        public string buyerName { get; set; }
+        public int deskWidth { get; set; }
+        public int deskLength { get; set; }
+        public int noOfDrawers { get; set; }
+        public string rushOrder { get; set; }
+        public SurfaceMaterial deskTopType { get; set; }
+        public int priceEstimate { get; set; }
+        
     }
 }
  

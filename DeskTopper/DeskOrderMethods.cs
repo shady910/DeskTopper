@@ -97,7 +97,7 @@ namespace DeskTopper
             int i = 0, j = 0;
 
 
-            if (desk.rushOrder == 0)
+            if (desk.rushOrder.Equals("14 days"))
                 return 0;
             else
             {
@@ -111,13 +111,13 @@ namespace DeskTopper
                 //use rush order timing to set j
                 switch (desk.rushOrder)
                 {
-                    case 3:
+                    case "3 days":
                         i = 0;
                         break;
-                    case 5:
+                    case "5 days":
                         i = 1;
                         break;
-                    case 7:
+                    case "7 days":
                         i = 2;
                         break;
                 }
@@ -190,7 +190,7 @@ namespace DeskTopper
         {
             try
             {
-                string[] lines = File.ReadAllLines("rushOrderPrices.txt");
+                string[] lines = File.ReadAllLines(@"rushOrderPrices.txt");
                 int count = 0;
                 for (int i = 0; i < array.GetLength(0); i++)
                 {

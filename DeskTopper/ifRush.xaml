@@ -6,6 +6,7 @@
       xmlns:local="clr-namespace:DeskTopper"
       mc:Ignorable="d" 
       d:DesignHeight="375" d:DesignWidth="525"
+      Loaded="Window_Loaded"
       Title="ifRush">
 
     <Grid>
@@ -26,12 +27,7 @@
             </Label.RenderTransform>
         </Label>
         <ListBox Name="rushListBox" Margin="10,79,417,60" FontSize="18" Background="#FF248999">
-            <ListBoxItem>14 days</ListBoxItem>
-            <ListBoxItem>7 days</ListBoxItem>
-            <ListBoxItem>5 days</ListBoxItem>
-            <ListBoxItem>3 days</ListBoxItem>
-           
-
+            
         </ListBox>
         <Button x:Name="press4" Content="Next Page" Click="IRbtn_Click"  
      HorizontalAlignment="Left" Margin="363,272,0,0" VerticalAlignment="Top" Width="133" Background="#FF58BFBB" FontSize="18" Height="43"/>
